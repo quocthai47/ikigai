@@ -7,11 +7,11 @@ plugins {
 	kotlin("plugin.spring") version "1.9.23"
 }
 
-group = "com.ikigai"
+group = "com.example"
 version = "0.0.1-SNAPSHOT"
 
 java {
-	sourceCompatibility = JavaVersion.VERSION_22
+	sourceCompatibility = JavaVersion.VERSION_17
 }
 
 repositories {
@@ -19,8 +19,7 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
@@ -28,7 +27,7 @@ dependencies {
 tasks.withType<KotlinCompile> {
 	kotlinOptions {
 		freeCompilerArgs += "-Xjsr305=strict"
-		jvmTarget = "22"
+		jvmTarget = "17"
 	}
 }
 
