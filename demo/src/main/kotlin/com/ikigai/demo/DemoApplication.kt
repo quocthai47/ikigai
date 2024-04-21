@@ -1,11 +1,11 @@
-package com.hello.test
+package com.ikigai.demo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class ExcerciseApplication
+class DemoApplication
 
 fun main(args: Array<String>) {
-	runApplication<ExcerciseApplication>(*args)
+	runApplication<DemoApplication>(*args)
 }
